@@ -1,0 +1,344 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hritik Portfolio</title>
+    <link rel="icon" href="hritik.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(52, 52, 94);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+     
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+       background-color: rgb(132, 175, 61);
+      }
+     
+      .left {
+        font-size: 1.5rem;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        display: flex;
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color:red;
+        font-size: 1.1rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+     
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      
+      }
+      .leftSection .btn {
+      padding: 12px;
+      font-size: large;
+      font-weight: bold;
+      background-color: #c40b52;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      cursor:pointer;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(38, 218, 47);
+      }
+      #element {
+        color: rgb(20, 214, 13);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.5px;
+        margin: 60px 80px;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .secondsection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+      footer {
+        background-color:rgb(235, 92, 92);
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+        margin-left: 250px;
+      }
+      .footer > div{
+        width: 223px;
+      }
+      .footersecond ul li a{
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        font-style: italic;
+
+      }
+      .gmail{
+        margin-left: 16px;
+        background-color: #9c97f1;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .rights{
+        text-align: center;
+        padding: 10px 0;
+        font-size: medium;
+        font-weight: bold;
+      }
+      .footercontainer{
+        width: 100%;
+        padding: 60px 40px 20px;
+      }
+      .socialicons{
+        display: flex;
+        justify-content: center;
+      } 
+      .socialicons a{
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+      }
+      .socialicons a i{
+        font-size: 2em;
+        color: black;
+        opacity: 0.9;
+      }
+      .socialicons a:hover{
+         background-color:rgb(88, 6, 6);
+         transition: 0.5s;
+
+      }
+      .socialicons a:hover i{
+        color: white;
+        transition: 0.5s;
+      }
+      .footerbottom{
+        background-color:white;
+        text-align: center;
+        padding: 20px;
+        
+    }
+    .footerbottom p{
+      color: black;
+    }
+      .footernav{
+        margin: 30px 0;
+      }
+      .footernav ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
+      
+      .footernav ul li a{
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;
+        
+      }
+      .footernav ul li a:hover{
+        opacity: 1;
+      }
+      
+      .designer{
+        opacity: 4;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+        color: #16196b;
+      }
+
+      @media(max-width:1290px){
+        nav{
+          width:100%;
+          flex-direction: column;
+          background-color: green;
+          
+          
+        }
+      }
+      @media(max-width:794px){
+        nav{
+          width:1000px;
+          background-color: green;
+          justify-content: flex-start;
+          text-align: start;
+          text-align: center;
+        }
+      }
+      
+     
+
+      @media (max-width:700px){
+        .firstSection{
+          flex-direction: column-reverse;
+        }
+      }
+
+      
+
+      @media (max-width:800px){
+        .footernav ul{
+          flex-direction: column;
+        }
+        .footernav ul li{
+          width: 100%;
+          text-align: center;
+          margin: 10px;
+        } 
+        @media (max-width:800px){
+        .footercontainer {
+          width: 1000px;
+          background-color: #c40b52;
+          }
+        @media (max-width:805px){
+          .footerbottom {
+            width: 1000px;
+            background-color: white;
+            }
+            
+              
+            
+
+      } 
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left" style="font-weight: bold;color:black;font-size: 35px">Hritik's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hii, My Name Is <span class="purple">Hritik Mishra</span>
+
+          <div>And I Am a Passionate</div>
+
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn"   onclick="document.location='Hritik Mishra Updated Resume.pdf'" title="Click on Resume">Download Resume</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="hritikm.png" alt="" style="width: 100%" ; margin="50px 0" />
+        </div>
+     
+    </main>
+   
+    <footer>
+      <div class="footercontainer">
+        <div class="socialicons">
+           <a href="https://www.facebook.com/profile.php?id=100010637742124"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://www.instagram.com/mr_h.r.i.t.i.k_m.i.s.h.r.a_/"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://github.com/hritikmishr"><i class="fa-brands fa-github"></i></a>
+           <a href="https://www.linkedin.com/in/hritik-mishra-087291220/"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fa-brands fa-google"></i></a>
+        </div>
+        <div class="footernav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+          </ul>
+        </div>
+       </div>
+      <div class="footerbottom">
+        <p>Copyright &COPY; 2023 | Designed by <span class="designer">Hritik Mishra</span> | All Rights Reserved </p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer","Frontend Engineer"],
+        typeSpeed: 20,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="hritik.jpg" />
+    <title>Services</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      .services h2 {
+        margin-bottom: 3rem;
+      }
+      .heading {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .services-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        list-style: disc;
+      }
+      .services-container .services-box:hover {
+        border-color: blueviolet;
+        transform: scale(1.02);
+      }
+      .services-container .services-box {
+        flex: 1 1 30rem;
+        background: yellow;
+        padding: 3rem 2rem 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        border: 0.2rem solid red;
+        transition: 0.5s ease;
+      }
+
+      .services-box h3 {
+        font-size: 2.6rem;
+      }
+      .services-box p {
+        font-size: 1.6rem0;
+        margin: 1rem 0 3rem;
+      }
+
+      nav {
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(132, 175, 61);
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: red;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div
+          class="left"
+          style="font-weight: bold; color: black; font-size: 35px"
+        >
+          Hritik's Portfolio
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="services" id="services">
+      <h2 class="heading">
+        Our
+        <span style="color: rgb(161, 57, 202); font-size: 40px">Services</span>
+      </h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, at!
+            Natus ipsam labore ab autem voluptatum? Est aliquam ratione numquam?
+            Tempore similique aliquam numquam qui natus unde, alias asperiores
+            aliquid!
+          </p>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web designer</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, at!
+            Natus ipsam labore ab autem voluptatum? Est aliquam ratione numquam?
+            Tempore similique aliquam numquam qui natus unde, alias asperiores
+            aliquid!
+          </p>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Frontend Development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, at!
+            Natus ipsam labore ab autem voluptatum? Est aliquam ratione numquam?
+            Tempore similique aliquam numquam qui natus unde, alias asperiores
+            aliquid!
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

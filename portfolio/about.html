@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="hritik.jpg" />
+    <title>about</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      .about-img {
+        margin-top: 40px;
+      }
+      .para {
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 2rem 0 3rem;
+        color: blueviolet;
+      }
+      .about {
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background: var(--second-bg-color);
+      }
+      .heading {
+        font-size: 4.5rem;
+      }
+      .about-content h2 {
+        line-height: 1.2;
+        text-align: center;
+      }
+      .about-content h3 {
+        font-size: 2.6rem;
+      }
+
+      nav {
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(132, 175, 61);
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: red;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div
+          class="left"
+          style="font-weight: bold; color: black; font-size: 35px"
+        >
+          Hritik's Portfolio
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About <span style="color: blue">Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p class="para">
+          Hii, My Name is <span style="color: black">Hritik Mishra</span> and I
+          am a <span style="color: rgb(216, 17, 216)">Web developer</span>.
+        </p>
+        <div class="para">
+          I Am a <span style="color: rgb(235, 57, 13)">Computer Engineer.</span>
+        </div>
+        <div class="about-img">
+          <img src="hritik.jpg" alt="" style="width: 400px" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
